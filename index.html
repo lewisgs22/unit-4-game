@@ -9,7 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
   </head>
+  
   <body background="assets/images/cloudy-day.png">
 
     <!-- randomly generated number that displys -->
@@ -37,23 +40,27 @@
     </div>
     <br>
     <div>
-        <h2 id="randomNumber"></h2>
+        <h3>Goal:</h3>
+        <p id="randomNumber"></p>
     </div>
     <br>
     <div class="w/l">
-        <p id="wins"></p>
-        <p id="losses"></p>
+        <h4>Wins:</h4>
+        <p id="numberWins"></p>
+        <h4>Losses:</h4>
+        <p id="numberLosses"></p>
     </div>
     <br>
     <div class="scorebox">
-        <p id="score">Your current score is: </p>
+        <h4>Your current score is: </h4>
+        <span id="score"></span>
     </div>
     <br>
     <div class="gems">
-    <button><img src="assets/images/bluecrystal.jpg"></button>
-    <button><img src="assets/images/redcrystal.jpeg"></button>
-    <button><img src="assets/images/yellowcrystal.png"></button>
-    <button><img src="assets/images/greencrystal.png"></button>
+    <button><img src="assets/images/bluecrystal.jpg" id="one"></button>
+    <button><img src="assets/images/redcrystal.jpeg" id="two"></button>
+    <button><img src="assets/images/yellowcrystal.png" id="three"></button>
+    <button><img src="assets/images/greencrystal.png" id="four"></button>
     </div>
       
     <!-- Optional JavaScript -->

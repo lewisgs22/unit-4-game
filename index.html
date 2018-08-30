@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Crystal Collector</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/bluegem.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz" rel="stylesheet">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
   </head>
@@ -39,16 +41,18 @@
         </ul>
     </div>
     <br>
-    <div>
-        <h3>Goal:</h3>
-        <p id="randomNumber"></p>
-    </div>
-    <br>
-    <div class="w/l">
-        <h4>Wins:</h4>
-        <p id="numberWins"></p>
-        <h4>Losses:</h4>
-        <p id="numberLosses"></p>
+    <div class="container">
+        <div class="goal">
+            <h3>Goal:</h3>
+            <p id="randomNumber"></p>
+        </div>
+        <br>
+        <div class="winscounter">
+            <h4>Wins:</h4>
+            <p id="numberWins"></p>
+            <h4>Losses:</h4>
+            <p id="numberLosses"></p>
+        </div>
     </div>
     <br>
     <div class="scorebox">
@@ -57,10 +61,10 @@
     </div>
     <br>
     <div class="gems">
-    <button><img src="assets/images/bluecrystal.jpg" id="one"></button>
-    <button><img src="assets/images/redcrystal.jpeg" id="two"></button>
-    <button><img src="assets/images/yellowcrystal.png" id="three"></button>
-    <button><img src="assets/images/greencrystal.png" id="four"></button>
+    <button><img src="assets/images/greengem.png" id="one"></button>
+    <button><img src="assets/images/bluegem.png" id="two"></button>
+    <button><img src="assets/images/redgem.png" id="three"></button>
+    <button><img src="assets/images/yellowgem.png" id="four"></button>
     </div>
       
     <!-- Optional JavaScript -->

@@ -5,7 +5,7 @@ $(document).ready(function(){
     $("#randomNumber").text(Random);
     // Appends random number to the randomNumber p tag
 
-    let num1 = Math.floor(Math.random()*11+1)
+    let num1 = Math.floor(Math.random()*11+1) 
     let num2 = Math.floor(Math.random()*11+1)
     let num3 = Math.floor(Math.random()*11+1)
     let num4 = Math.floor(Math.random()*11+1)
@@ -22,7 +22,7 @@ $(document).ready(function(){
     function reset(){
         Random=Math.floor(Math.random()*101+19);
         console.log(Random)
-        $('#randomNumber').text(Random);
+        $("#randomNumber").text(Random);
         num1 = Math.floor(Math.random()*11+1);
         num2 = Math.floor(Math.random()*11+1);
         num3 = Math.floor(Math.random()*11+1);
@@ -42,15 +42,15 @@ $(document).ready(function(){
     function yuck() {
         alert("You Lost!");
         losses++;
-        $("numberLosses").text(losses);
+        $("#numberLosses").text(losses);
         reset();
     }
     // Adds wins and losses
 
-    $("one").on("click", function(){
+    $("#one").on("click", function(){
         userScore = userScore + num1;
         console.log("New user score =" + userScore);
-        $("score").text(userScore);
+        $("#score").text(userScore);
 
         if (userScore === Random) {
             wow();
@@ -60,10 +60,10 @@ $(document).ready(function(){
         } 
     })
 
-    $("two").on("click", function(){
+    $("#two").on("click", function(){
         userScore = userScore + num2;
         console.log("New user score =" + userScore);
-        $("score").text(userScore);
+        $("#score").text(userScore);
 
         if (userScore === Random) {
             wow();
@@ -73,10 +73,10 @@ $(document).ready(function(){
         } 
     })
 
-    $("three").on("click", function(){
+    $("#three").on("click", function(){
         userScore = userScore + num3;
         console.log("New user score =" + userScore);
-        $("score").text(userScore);
+        $("#score").text(userScore);
 
         if (userScore === Random) {
             wow();
@@ -86,10 +86,10 @@ $(document).ready(function(){
         } 
     })
 
-    $("four").on("click", function(){
+    $("#four").on("click", function(){
         userScore = userScore + num4;
         console.log("New user score =" + userScore);
-        $("score").text(userScore);
+        $("#score").text(userScore);
 
         if (userScore === Random) {
             wow();

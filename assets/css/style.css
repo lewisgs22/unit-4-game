@@ -1,8 +1,63 @@
 img {
     height: 100px;
     width: 100px;
+    background-color: transparent;
+}
+
+img:hover {
+    opacity: 0.3;
 }
 
 #randomNumber {
     font-size: 50px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+}
+
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+ul {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    margin-left: 0px;
+}
+
+.winscounter {
+    padding-right: 150px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+}
+
+#numberWins {
+    font-size: 20px;
+}
+
+#numberLosses {
+    font-size: 20px;
+}
+
+.goal {
+    margin-right: 180px;
+    padding-right: 90px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
 }

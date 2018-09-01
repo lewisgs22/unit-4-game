@@ -12,7 +12,6 @@
     <link rel="icon" type="image/png" href="assets/images/bluegem.png">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz" rel="stylesheet">
     <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
   </head>
   
   <body background="assets/images/cloudy-day.png">
@@ -53,11 +52,14 @@
             <h4>Losses:</h4>
             <p id="numberLosses"></p>
         </div>
+        <div class="messageboard">
+            <p id="message"></p>
+        </div>
     </div>
     <br>
     <div class="scorebox">
         <h4>Your current score is: </h4>
-        <span id="score"></span>
+        <p id="score"></p>
     </div>
     <br>
     <div class="gems">
@@ -65,6 +67,10 @@
     <button><img src="assets/images/bluegem.png" id="two"></button>
     <button><img src="assets/images/redgem.png" id="three"></button>
     <button><img src="assets/images/yellowgem.png" id="four"></button>
+    </div>
+
+    <div class="messageboard">
+        <p id="message"></p>
     </div>
       
     <!-- Optional JavaScript -->

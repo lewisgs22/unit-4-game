@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let Random=Math.floor(Math.random()*101+19)
+    let Random = Math.floor(Math.random()*101+19)
     // Selects a random number between 19 - 120 to display at the start of the game
 
     $("#randomNumber").text(Random);
@@ -24,23 +24,27 @@ $(document).ready(function(){
         console.log(Random)
         $("#randomNumber").text(Random);
         num1 = Math.floor(Math.random()*11+1);
+        console.log(num1)
         num2 = Math.floor(Math.random()*11+1);
+        console.log(num2)
         num3 = Math.floor(Math.random()*11+1);
+        console.log(num3)
         num4 = Math.floor(Math.random()*11+1);
+        console.log(num4)
         userScore = 0;
         $("#score").text(userScore);
         }
     // Resets game
 
     function wow() {
-        alert("You Won!");
+        $("#message").text("You Won!");
         wins++;
         $("#numberWins").text(wins);
         reset();
     }
 
     function yuck() {
-        alert("You Lost!");
+        $("#message").text("You Lost!...Try again");
         losses++;
         $("#numberLosses").text(losses);
         reset();
@@ -50,6 +54,7 @@ $(document).ready(function(){
     $("#one").on("click", function(){
         userScore = userScore + num1;
         console.log("New user score =" + userScore);
+        console.log(num1)
         $("#score").text(userScore);
 
         if (userScore === Random) {

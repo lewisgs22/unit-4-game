@@ -29,6 +29,10 @@ ul {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+li {
+    font-size: 18px;
+}
+
 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px;
@@ -41,6 +45,7 @@ p {
 
 .winscounter {
     padding-right: 150px;
+    padding-left: 10px;
     border-style: dashed;
     border-color: black;
     border-width: 1px;
@@ -55,9 +60,19 @@ p {
 }
 
 .goal {
-    margin-right: 180px;
+    margin-right: 100px;
     padding-right: 90px;
+    padding-left: 10px;
     border-style: dashed;
     border-color: black;
     border-width: 1px;
+}
+
+.messageboard {
+    margin-left: 180px;
+}
+
+#message {
+    font-size: 40px;
+    padding-top: 30px;
 }
